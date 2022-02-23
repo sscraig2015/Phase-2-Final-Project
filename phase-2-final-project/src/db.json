@@ -1,9 +1,0 @@
-{
-    "movies": [
-      { "id": 1, "title": "the-thing", "director": "John Carpenter", "poster":"https://theposterdb.com/api/assets/38139"},
-      { "id": 2, "title": "toy-story", "director": "John Lasseter" },
-      { "id": 3, "title": "the-treasure-of-the-sierra-madre", "director": "John Huston" },
-      { "id": 4, "title": "catwoman", "director": "Pitof" },
-      { "id": 5, "title": "jack-and-jill", "director": "Dennis Dugan" }
-    ]
-  }
