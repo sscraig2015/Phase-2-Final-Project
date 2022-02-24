@@ -1,11 +1,11 @@
 import React from "react" 
-
+import { Link } from 'react-router-dom';
 function HomepageRender({movies}){
+   
     return (
      <div className="Homepage">
-         {console.log(movies)}
         {movies.map((movie) => {
-        return <img key={movie.id} className="Homepage-poster" src={movie.poster} alt={movie.title} />
+        return <Link key={movie.id} to={`/${movie.title}`}><img key={movie.id} className="Homepage-poster" src={movie.poster} alt={movie.title} /></Link>
       })}
     </div> 
     ) 
