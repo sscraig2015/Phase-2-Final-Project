@@ -1,69 +1,8 @@
 {
-    "movies": [
-      { "id": 1, "title": "the-thing", "director": "John Carpenter", "poster":"https://m.media-amazon.com/images/M/MV5BNGViZWZmM2EtNGYzZi00ZDAyLTk3ODMtNzIyZTBjN2Y1NmM1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg", "comments" : [
-        {
-          "id": 1,
-          "user": "duanebot",
-          "comment": "first!"
-        },
-        {
-          "id": 2,
-          "user": "sneb",
-          "comment": "second!"
-        }
-      ] }, 
-      
-      { "id": 2, "title": "toy-story", "director": "John Lasseter", "poster": "https://mypostercollection.com/wp-content/uploads/2019/07/toy-story-poster-676x1024.jpg", "comments" : [
-          {
-            "id": 1,
-            "user": "duanebot",
-            "comment": "first!"
-          },
-          {
-            "id": 2,
-            "user": "sneb",
-            "comment": "second!"
-          }
-        ]
-      },
-      { "id": 3, "title": "the-treasure-of-the-sierra-madre", "director": "John Huston", "poster": "https://dyn1.heritagestatic.com/lf?set=path%5B7%2F7%2F2%2F772911%5D&call=url%5Bfile%3Aproduct.chain%5D", 
-        "comments" : [
-        {
-          "id": 1,
-          "user": "duanebot",
-          "comment": "first!"
-        },
-        {
-          "id": 2,
-          "user": "sneb",
-          "comment": "second!"
-        }
-      ]},
-      { "id": 4, "title": "catwoman", "director": "Pitof", "poster": "https://vanyaland.com/wp-content/uploads/2017/05/Catwoman-Poster.jpg" , 
-        "comments" : [
-        {
-          "id": 1,
-          "user": "duanebot",
-          "comment": "first!"
-        },
-        {
-          "id": 2,
-          "user": "sneb",
-          "comment": "second!"
-        }
-      ]},
-      { "id": 5, "title": "jack-and-jill", "synopsis": "Thanksgiving is usually a happy time, but ad executive Jack (Adam Sandler) dreads the holiday because his twin sister, Jill (also Sandler), makes her annual visit. When Jack and his sister get off on the wrong foot, the only way to make it right is to invite her to stay through Hanukkah. But, when actor Al Pacino (Al Pacino), whom Jack desperately needs to star in a commercial, takes a shine to Jill, Jack may be forced to extend his sister's visit even longer.", "director": "Dennis Dugan", "poster": "https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/product_image_aspect_switcher_170w/public/product-images/csm-movie/jack-and-jill-poster.jpg?itok=qbSopni9", "comments" : [
-        {
-          "id": 1,
-          "user": "duanebot",
-          "comment": "first!"
-        },
-        {
-          "id": 2,
-          "user": "sneb",
-          "comment": "second!"
-        }
-      ]}
-    ]
-    
-  }
+  "movies": [
+    { "id": 1, "title":"The Thing",  "urltitle": "the-thing", "director": "John Carpenter", "poster":"https://m.media-amazon.com/images/M/MV5BNGViZWZmM2EtNGYzZi00ZDAyLTk3ODMtNzIyZTBjN2Y1NmM1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"},
+    { "id": 3, "title": "The Treasure of the Sierra Madre", "urltitle": "the-treasure-of-the-sierra-madre", "director": "John Huston", "poster": "https://dyn1.heritagestatic.com/lf?set=path%5B7%2F7%2F2%2F772911%5D&call=url%5Bfile%3Aproduct.chain%5D"},
+    { "id": 4, "title": "CatWoman", "urltitle": "catwoman", "director": "Pitof", "poster": "https://vanyaland.com/wp-content/uploads/2017/05/Catwoman-Poster.jpg"},
+    { "id": 5, "title": "Jack and Jill", "urltitle": "jack-and-jill", "synopsis": "Thanksgiving is usually a happy time, but ad executive Jack (Adam Sandler) dreads the holiday because his twin sister, Jill (also Sandler), makes her annual visit. When Jack and his sister get off on the wrong foot, the only way to make it right is to invite her to stay through Hanukkah. But, when actor Al Pacino (Al Pacino), whom Jack desperately needs to star in a commercial, takes a shine to Jill, Jack may be forced to extend his sister's visit even longer.", "director": "Dennis Dugan", "poster": "https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/product_image_aspect_switcher_170w/public/product-images/csm-movie/jack-and-jill-poster.jpg?itok=qbSopni9", "upvote": 100, "downvote": 1000}
+  ]
+}

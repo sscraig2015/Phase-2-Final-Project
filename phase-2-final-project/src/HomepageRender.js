@@ -5,7 +5,7 @@ function HomepageRender({movies}){
     return (
      <div className="Homepage">
         {movies.map((movie) => {
-        return <Link key={movie.id} to={`/${movie.title}`}><img key={movie.id} className="Homepage-poster" src={movie.poster} alt={movie.title} /></Link>
+        return <Link key={movie.id} to={`/${movie.urltitle}`}><img key={movie.id} className="Homepage-poster" src={movie.poster} alt={movie.title} /></Link>
       })}
     </div> 
     ) 

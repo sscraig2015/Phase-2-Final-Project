@@ -41,7 +41,7 @@ function App() {
           <RenderMovie movie={movies} />
         </Route>
         <Route exact path="/jack-and-jill">
-          <RenderMovie movie={movies} />
+          <RenderMovie movie={movies} /> 
         </Route>
       </Switch>
     </div>
