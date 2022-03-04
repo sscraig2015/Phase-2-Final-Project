@@ -1,6 +1,7 @@
 import React from "react" 
 import { Link } from 'react-router-dom';
-function HomepageRender({movies}){
+
+function Homepage({movies}){
    
     return (
      <div className="Homepage">
@@ -11,4 +12,4 @@ function HomepageRender({movies}){
     ) 
 }
 
-export default HomepageRender
+export default Homepage
