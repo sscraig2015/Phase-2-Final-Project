@@ -21,7 +21,7 @@ function SelectedMovie({movie}){
             let data = upvote
             
             fetch(`http://localhost:3000/movies/${selectedMovie.id}`, {
-            method:"POST",
+            method:"PATCH",
             header: {
                 "Content-Type": "application/json",
             },
@@ -33,7 +33,7 @@ function SelectedMovie({movie}){
             let data = downvote
             
             fetch(`http://localhost:3000/movies/${selectedMovie.id}`, {
-                method:"POST",
+                method:"PATCH",
                 header: {
                     "Content-Type": "application/json",
                 },
