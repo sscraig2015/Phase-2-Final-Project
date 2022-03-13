@@ -1,6 +1,7 @@
 import './App.css';
 import React, {useState, useEffect} from "react"
-import {Route , Switch, NavLink} from "react-router-dom"
+import {Route , Switch, NavLink, useRouteMatch} from "react-router-dom"
+
 import Homepage from './Homepage';
 import SelectedMovie from './SelectedMovie';
 import NewMovieForm from './NewMovieForm';
@@ -18,8 +19,9 @@ const linkStyles = {
 
 function App() {
   const [movies, setMovies] = useState([])
-  
-  
+  const match = useRouteMatch()
+  console.log(movies)
+
   useEffect(() => {
     fetch("http://localhost:3000/movies")
         .then((resp) => resp.json())
@@ -29,13 +31,18 @@ function App() {
 
 function handleNewMovie(e){
   e.preventDefault()
-  console.log(e.target.title.value)
+  
   let data = {
+    id: movies.length + 1,
     title: e.target.title.value,
+    urltitle: e.target.title.value,
     synopsis: e.target.synopsis.value,
     director: e.target.director.value,
     release: e.target.release.value,
-    starring: e.target.starring.value,
+    starring: [e.target.starring.value],
+    poster: e.target.poster.value,
+    upvote: 0,
+    downvote: 0,
   }
 
   fetch("http://localhost:3000/movies", {
@@ -50,31 +57,16 @@ function handleNewMovie(e){
   return (
     <div>      
       <NavLink to ="/" style={linkStyles}>Homepage</NavLink>
-      <NavLink to ="/newMovie">Add New Movie</NavLink>
+      <NavLink to ="/addNewMovie">Add New Movie</NavLink>
       <Switch>
-        <Route path="/newMovie">
+        <Route  path="/addNewMovie/">
           <NewMovieForm handleNewMovie={handleNewMovie}/>
         </Route>
-        <Route exact path="/">
+        <Route  path={`${match.url}:movieId`}>
+          <SelectedMovie movie={movies} />
+        </Route>
+        <Route  path="/">
           <Homepage movies={movies}/>
-        </Route>
-        <Route exact path="/movies/:id">
-          <SelectedMovie movie={movies} />
-        </Route>
-        <Route exact path="/the-thing">
-          <SelectedMovie movie={movies} />
-        </Route>
-        <Route exact path="/toy-story">
-          <SelectedMovie movie={movies} />
-        </Route>
-        <Route exact path="/the-treasure-of-the-sierra-madre">
-          <SelectedMovie movie={movies} />
-        </Route>
-        <Route exact path="/catwoman">
-          <SelectedMovie movie={movies} />
-        </Route>
-        <Route exact path="/jack-and-jill">
-          <SelectedMovie movie={movies} /> 
         </Route>
       </Switch>
     </div>

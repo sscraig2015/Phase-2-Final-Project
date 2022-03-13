@@ -1,6 +1,8 @@
 import React from "react"
 
+
 function NewMovieForm({handleNewMovie}){
+
     return (
         <div className="Homepage">
             Add details and then hit submit to add new movie
@@ -10,6 +12,7 @@ function NewMovieForm({handleNewMovie}){
                 Director: <input type="text" name="director"/><br/>
                 Release: <input type="text" name="release"/><br/>
                 Starring: <input type="text" name="starring"/><br/>
+                Poster: <input type="text" name="poster"/><br/>
                 <input type="submit"/>
             </form>
         </div>

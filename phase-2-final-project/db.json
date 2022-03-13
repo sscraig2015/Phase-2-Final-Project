@@ -3,7 +3,6 @@
     {
       "id": 1,
       "title": "The Thing",
-      "urltitle": "the-thing",
       "synopsis": "In remote Antarctica, a group of American research scientists are disturbed at their base camp by a helicopter shooting at a sled dog. When they take in the dog, it brutally attacks both human beings and canines in the camp and they discover that the beast can assume the shape of its victims. A resourceful helicopter pilot (Kurt Russell) and the camp doctor (Richard Dysart) lead the camp crew in a desperate, gory battle against the vicious creature before it picks them all off, one by one.",
       "director": "John Carpenter",
       "release": "June 25, 1982",
@@ -17,7 +16,6 @@
     {
       "id": 2,
       "title": "Toy Story",
-      "urltitle": "toy-story",
       "synopsis": "Woody (Tom Hanks), a good-hearted cowboy doll who belongs to a young boy named Andy (John Morris), sees his position as Andy's favorite toy jeopardized when his parents buy him a Buzz Lightyear (Tim Allen) action figure. Even worse, the arrogant Buzz thinks he's a real spaceman on a mission to return to his home planet. When Andy's family moves to a new house, Woody and Buzz must escape the clutches of maladjusted neighbor Sid Phillips (Erik von Detten) and reunite with their boy.",
       "director": "John Lasseter",
       "release": "November 22, 1995",
@@ -31,7 +29,6 @@
     {
       "id": 3,
       "title": "The Treasure of the Sierra Madre",
-      "urltitle": "the-treasure-of-the-sierra-madre",
       "synopsis": "In this classic adventure film, two rough-and-tumble wanderers, Dobbs (Humphrey Bogart) and Curtin (Tim Holt), meet up with a veteran prospector, Howard (Walter Huston), in Mexico and head into the Sierra Madre mountains to find gold. Although they discover treasure, they also find plenty of trouble, not only from ruthless bandits lurking in the dangerous Mexican wilderness but from their own insecurities and greed, which threaten to bring conflict at any moment.",
       "director": "John Huston",
       "release": "January 6, 1948",
@@ -48,7 +45,6 @@
     {
       "id": 4,
       "title": "CatWoman",
-      "urltitle": "catwoman",
       "synopsis": "Catwoman is the story of shy, sensitive artist Patience Philips (Halle Berry), a woman who can't seem to stop apologizing for her own existence. She works as a graphic designer for Hedare Beauty, a mammoth cosmetics company on the verge of releasing a revolutionary anti-aging product. When Patience inadvertently happens upon a dark secret her employer is hiding, she finds herself in the middle of a corporate conspiracy. What happens next changes Patience forever.",
       "director": "Pitof",
       "release": "July 19, 2004",
@@ -64,7 +60,6 @@
     {
       "id": 5,
       "title": "Jack and Jill",
-      "urltitle": "jack-and-jill",
       "synopsis": "Thanksgiving is usually a happy time, but ad executive Jack (Adam Sandler) dreads the holiday because his twin sister, Jill (also Sandler), makes her annual visit. When Jack and his sister get off on the wrong foot, the only way to make it right is to invite her to stay through Hanukkah. But, when actor Al Pacino (Al Pacino), whom Jack desperately needs to star in a commercial, takes a shine to Jill, Jack may be forced to extend his sister's visit even longer.",
       "director": "Dennis Dugan",
       "release": "November 11, 2011",
@@ -78,12 +73,32 @@
       "downvote": 1000
     },
     {
-      "title": "sdfg",
-      "synopsis": "adsf",
-      "director": "adsf",
-      "release": "asdf",
-      "starring": "adsf",
-      "id": 6
+      "id": 6,
+      "title": "Scent of a Woman",
+      "urltitle": "Scent of a Woman",
+      "synopsis": "Frank is a retired Lt. Col. in the US army. He's blind and impossible to get along with. Charlie is at school and is looking forward to going to college. To help pay for a trip home for Christmas, he agrees to look after Frank over Thanksgiving. Frank's niece says this will be easy money, but she didn't reckon on Frank spending his Thanksgiving in New York.",
+      "director": "Martin Brest",
+      "release": "December 23, 1992",
+      "starring": [
+        "Al Pacino, Chris O’Donnell, Gabrielle Anwar"
+      ],
+      "poster": "https://m.media-amazon.com/images/M/MV5BZTM3ZjA3NTctZThkYy00ODYyLTk2ZjItZmE0MmZlMTk3YjQwXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg",
+      "upvote": 0,
+      "downvote": 0
+    },
+    {
+      "id": 7,
+      "title": "Young Frankenstein",
+      "urltitle": "Young Frankenstein",
+      "synopsis": "Respected medical lecturer Dr. Frederick Frankenstein (Gene Wilder) learns that he has inherited his infamous grandfather's estate in Transylvania. Arriving at the castle, Dr. Frankenstein soon begins to recreate his grandfather's experiments with the help of servants Igor (Marty Feldman), Inga (Teri Garr) and the fearsome Frau Blücher (Cloris Leachman). After he creates his own monster (Peter Boyle), new complications ensue with the arrival of the doctor's fiancée, Elizabeth (Madeline Kahn).",
+      "director": "Mel Brooks",
+      "release": "December 15, 1974",
+      "starring": [
+        "Respected medical lecturer Dr. Frederick Frankenstein (Gene Wilder) learns that he has inherited his infamous grandfather's estate in Transylvania. Arriving at the castle, Dr. Frankenstein soon begins to recreate his grandfather's experiments with the help of servants Igor (Marty Feldman), Inga (Teri Garr) and the fearsome Frau Blücher (Cloris Leachman). After he creates his own monster (Peter Boyle), new complications ensue with the arrival of the doctor's fiancée, Elizabeth (Madeline Kahn)."
+      ],
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTEwNjg2MjM2ODFeQTJeQWpwZ15BbWU4MDQ1MDU5OTEx._V1_.jpg",
+      "upvote": 0,
+      "downvote": 0
     }
   ]
 }

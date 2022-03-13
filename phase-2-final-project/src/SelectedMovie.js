@@ -2,18 +2,21 @@ import React, {useState} from "react"
 import Synopsis from "./Synopsis"
 import Rating from "./Rating"
 import MovieInfo from "./MovieInfo"
-import { useParams } from "react-router-dom"
+import { useParams} from "react-router-dom"
 
 
 function SelectedMovie({movie}){
+    console.log(movie[0].id)
 
-    let selectedMovie = movie.find((movieObj) => movieObj.urltitle === window.location.pathname.substring(1))
+    let params = useParams()
+    console.log(params.movieId)
+    
+    let selectedMovie = movie[params.movieId - 1]
+    console.log(selectedMovie)
     const [upvote, setUpvote] = useState(selectedMovie.upvote)
     const [downvote, setDownvote] = useState(selectedMovie.downvote)
     const [movieInfo, setMovieInfo] = useState(false)
-    const params = useParams();
-    console.log(params);
-
+    
 
     function handleVote(e){
         if (e.target.name === "upvote") {
