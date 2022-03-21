@@ -55,13 +55,22 @@ function SelectedMovie({movie}){
     
    
     return (
-       <div className="Homepage">
-           <h1 style={styles.underline}>{selectedMovie.title}</h1>
-            <img alt={selectedMovie.title} src={selectedMovie.poster} className="Homepage-poster"/><br/>
-            <button onClick={showMovieInfo}>Show/Hide Movie Info</button>
-            {movieInfo ? <MovieInfo movie={selectedMovie}/> : null}<br/>
-            <Synopsis synopsis={selectedMovie.synopsis}/>
+       <div className="selectedMovie">
+                
+                <h1 style={styles.underline}>{selectedMovie.title}</h1>
+                    <p className="synopsis">
+                        <Synopsis synopsis={selectedMovie.synopsis}/>
+                        
+                    </p>
+                {movieInfo ? <MovieInfo movie={selectedMovie}/> : null}
+                
             <Rating upvote={upvote} downvote={downvote} handleVote={handleVote}/>
+            <div>
+                    <img alt={selectedMovie.title} src={selectedMovie.poster} className="Homepage-poster"/>
+                </div>
+                <div>
+                    <button id="showInfoButton" onClick={showMovieInfo}>Show/Hide Movie Info</button>
+                </div>
             
        </div>
       

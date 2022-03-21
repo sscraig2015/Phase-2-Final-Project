@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -40,13 +41,106 @@
 .Homepage-poster {
   width: 156px;
   height: 231px;
-  padding: 25px;
+  padding: 15px;
+  border-radius: 20px;
+  margin: 10px;
+  
+}
+
+.Homepage img:hover{
+  filter: brightness(.60);
 }
 
 .Homepage {
-  margin: auto;
-  width: 50%;
-  border: 3px solid #ecb92c;
-  padding: 10px;
+  margin:auto;
+  margin-bottom: 100%;
+  width: 1060px;
+  padding-right: auto;
+  background-color: #445566;
+}
+#homepageLogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 35px;
+}
+.NavLink {
+  margin-top:15px;
+  margin-left: 23.5%;
+  margin-right: 25%;
+  margin-bottom: 10px;
+  border-bottom: 5px solid #681256
+  
+}
 
+.NavLinkButton {
+  display: inline-block;
+  width: auto;
+  padding: 12px;
+  margin: 0 6px 6px;
+  background: #D9E7AC;
+  color: #C0185A;
+  font-family: Andale Mono, monospace;
+  font-size: large;
+  font-weight: bold;
+  
+}
+.movieLink{
+  box-shadow: #e72e0d;
+  border-radius: 25px;
+}
+
+.selectedMovie {
+  margin:auto;
+  margin-bottom: 100%;
+  width: 1060px;
+  height: 395px;
+  background-color: #445566;
+  border: 3px solid #681256;
+}
+
+.selectedMovie img{
+  width: 231px;
+  height: 346.50px;
+  float: left;
+}
+
+#showInfoButton {
+  text-align: center;
+  float: left;
+}
+.synopsis {
+  background-color: #D9E7AC;
+  margin-left: 25%;
+  margin-right: 17%;
+  border: 2px solid #61dafb
+}
+
+.newMovieForm {
+  margin-left: 25%;
+  margin-right: 25%;
+  border: 3px solid #61dafb;
+  padding: 10px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.newMovieForm h3 {
+  width: 85%;
+  margin: 0 auto;
+  border-bottom: 2px solid #61dafb;
+  font-family: Andale Mono, monospace;
+  color: white;
+}
+
+
+html {
+  background-color:#445566 ;
 }

@@ -6,16 +6,6 @@ import Homepage from './Homepage';
 import SelectedMovie from './SelectedMovie';
 import NewMovieForm from './NewMovieForm';
 
-const linkStyles = {
-  display: "inline-block",
-  width: "auto",
-  padding: "12px",
-  margin: "0 6px 6px",
-  background: "blue",
-  textDecoration: "none",
-  color: "white",
-};
-
 
 function App() {
   const [movies, setMovies] = useState([])
@@ -35,7 +25,6 @@ function handleNewMovie(e){
   let data = {
     id: movies.length + 1,
     title: e.target.title.value,
-    urltitle: e.target.title.value,
     synopsis: e.target.synopsis.value,
     director: e.target.director.value,
     release: e.target.release.value,
@@ -56,8 +45,11 @@ function handleNewMovie(e){
 
   return (
     <div>      
-      <NavLink to ="/" style={linkStyles}>Homepage</NavLink>
-      <NavLink to ="/addNewMovie">Add New Movie</NavLink>
+      <img id="homepageLogo" alt='title' src='https://tinyurl.com/5n8r4rtz' />
+      <div className="NavLink">
+      <NavLink to ="/" className="NavLinkButton" style={{ textDecoration: 'none' }}>Homepage</NavLink>
+      <NavLink to ="/addNewMovie" className="NavLinkButton" style={{ textDecoration: 'none' }}>Add New Movie</NavLink>
+      </div>
       <Switch>
         <Route  path="/addNewMovie/">
           <NewMovieForm handleNewMovie={handleNewMovie}/>
