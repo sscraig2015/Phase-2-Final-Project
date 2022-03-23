@@ -31,8 +31,7 @@ function handleNewMovie(e){
     release: e.target.release.value,
     starring: [e.target.starring.value],
     poster: e.target.poster.value,
-    upvote: 0,
-    downvote: 0,
+    spotify: e.target.spotify.value,
   }
 
   fetch("http://localhost:3000/movies", {

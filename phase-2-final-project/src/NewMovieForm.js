@@ -33,6 +33,10 @@ function NewMovieForm({handleNewMovie}){
                         <td><input type="text" name="poster"/></td>    
                     </tr>
                     <tr>
+                        <td>Spotify Link: </td>
+                        <td><input type="text" name="spotify"/></td>    
+                    </tr>
+                    <tr>
                         <input type="submit"/>
                     </tr>
                 </table>

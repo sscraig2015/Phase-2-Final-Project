@@ -9,9 +9,7 @@
       "starring": [
         "Kurt Russel"
       ],
-      "poster": "https://m.media-amazon.com/images/M/MV5BNGViZWZmM2EtNGYzZi00ZDAyLTk3ODMtNzIyZTBjN2Y1NmM1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg",
-      "upvote": 1000,
-      "downvote": 1
+      "poster": "https://m.media-amazon.com/images/M/MV5BNGViZWZmM2EtNGYzZi00ZDAyLTk3ODMtNzIyZTBjN2Y1NmM1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
     },
     {
       "id": 2,
@@ -22,9 +20,7 @@
       "starring": [
         "Tom Hanks, Tim Allen"
       ],
-      "poster": "https://mypostercollection.com/wp-content/uploads/2019/07/toy-story-poster-676x1024.jpg",
-      "upvote": 1000,
-      "downvote": 1
+      "poster": "https://mypostercollection.com/wp-content/uploads/2019/07/toy-story-poster-676x1024.jpg"
     },
     {
       "id": 3,
@@ -38,9 +34,7 @@
         "Tim Holt",
         "Bruce Bennett"
       ],
-      "poster": "https://dyn1.heritagestatic.com/lf?set=path%5B7%2F7%2F2%2F772911%5D&call=url%5Bfile%3Aproduct.chain%5D",
-      "upvote": 1000,
-      "downvote": 1
+      "poster": "https://dyn1.heritagestatic.com/lf?set=path%5B7%2F7%2F2%2F772911%5D&call=url%5Bfile%3Aproduct.chain%5D"
     },
     {
       "id": 4,
@@ -53,9 +47,7 @@
         "Benjamin Bratt",
         "Lambert Wilson"
       ],
-      "poster": "https://vanyaland.com/wp-content/uploads/2017/05/Catwoman-Poster.jpg",
-      "upvote": 1000,
-      "downvote": 1
+      "poster": "https://vanyaland.com/wp-content/uploads/2017/05/Catwoman-Poster.jpg"
     },
     {
       "id": 5,
@@ -68,9 +60,7 @@
         "Katie Holmes",
         "Al Pacino"
       ],
-      "poster": "https://m.media-amazon.com/images/I/81IkCfVtKKL._AC_SY550_.jpg",
-      "upvote": 100,
-      "downvote": 1000
+      "poster": "https://m.media-amazon.com/images/I/81IkCfVtKKL._AC_SY550_.jpg"
     },
     {
       "id": 6,
@@ -82,9 +72,7 @@
       "starring": [
         "Al Pacino, Chris O’Donnell, Gabrielle Anwar"
       ],
-      "poster": "https://m.media-amazon.com/images/M/MV5BZTM3ZjA3NTctZThkYy00ODYyLTk2ZjItZmE0MmZlMTk3YjQwXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg",
-      "upvote": 0,
-      "downvote": 0
+      "poster": "https://m.media-amazon.com/images/M/MV5BZTM3ZjA3NTctZThkYy00ODYyLTk2ZjItZmE0MmZlMTk3YjQwXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg"
     },
     {
       "id": 7,
@@ -97,8 +85,7 @@
         "Gene Wilder"
       ],
       "poster": "https://m.media-amazon.com/images/M/MV5BMTEwNjg2MjM2ODFeQTJeQWpwZ15BbWU4MDQ1MDU5OTEx._V1_.jpg",
-      "upvote": 0,
-      "downvote": 0
+      "soundcloud": "https://soundcloud.com/user-948776417/young-frakenstein"
     }
   ]
 }

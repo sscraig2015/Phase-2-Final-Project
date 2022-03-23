@@ -2,11 +2,11 @@ import React from "react"
 
 function MovieInfo({movie}){
     return (
-        <div>
+        <div className="movieDetails">
             
-            Director: {movie.director}<br/>
-            Released: {movie.release}<br/>
-            Starring: {movie.starring.map((actor) => {
+            <span className="details">Director:</span> {movie.director}<br/>
+            <span className="details">Released:</span> {movie.release}<br/>
+            <span className="details">Starring:</span> {movie.starring.map((actor) => {
                         return (`${actor}, `)})}<br/>
         </div>
     )

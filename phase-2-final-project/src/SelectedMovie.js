@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import Synopsis from "./Synopsis"
-import Rating from "./Rating"
 import MovieInfo from "./MovieInfo"
+import ListenLinks from "./ListenLinks"
 import { useParams} from "react-router-dom"
 
 
@@ -10,40 +10,8 @@ function SelectedMovie({movie}){
     let params = useParams()
     
     let selectedMovie = movie[params.movieId - 1]
-    console.log(selectedMovie)
-    const [upvote, setUpvote] = useState(selectedMovie.upvote)
-    const [downvote, setDownvote] = useState(selectedMovie.downvote)
+    console.log(selectedMovie.soundcloud)
     const [movieInfo, setMovieInfo] = useState(false)
-    
-
-    function handleVote(e){
-        if (e.target.name === "upvote") {
-                   
-            setUpvote(upvote + 1)
-                   
-            let data = upvote
-            
-            fetch(`http://localhost:3000/movies/${selectedMovie.id}`, {
-            method:"PATCH",
-            header: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({upvote : data})
-        })
-        
-        } else {
-            setDownvote(downvote +1)
-            let data = downvote
-            
-            fetch(`http://localhost:3000/movies/${selectedMovie.id}`, {
-                method:"PATCH",
-                header: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({downvote : data})
-            })
-        }
-    }    
     
     function showMovieInfo(){
         setMovieInfo(!movieInfo)
@@ -61,13 +29,11 @@ function SelectedMovie({movie}){
                         <button id="showInfoButton" onClick={showMovieInfo}>Show/Hide Movie Info</button>
                         {movieInfo ? <MovieInfo movie={selectedMovie}/> : null}
                     </tr>
-                    <tr>
-                        <Rating upvote={upvote} downvote={downvote} handleVote={handleVote}/>
-                    </tr>
                 </tbody>           
                 <Synopsis synopsis={selectedMovie.synopsis}/>
+                
             </div>       
-
+                <ListenLinks soundcloud={selectedMovie.soundcloud}/>
 
        </div>
       

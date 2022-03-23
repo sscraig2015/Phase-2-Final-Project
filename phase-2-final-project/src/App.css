@@ -94,7 +94,7 @@
 .selectedMovie {
   border: 1px solid black;
   width: 50%;
-  height: 100%;
+  height: auto;
   margin-left: 25%;
   margin-right: 25%;
   
@@ -128,7 +128,22 @@ width: auto;
 height: auto;
 border-spacing: 5px;
 margin-left: 5%;
-margin-bottom: 5%;
+margin-bottom: 1%;
+}
+
+.movieDetails {
+  border: 2px solid #070907;
+  text-align: left;
+  line-height: 1.6;
+  background-color: #afcdeb;
+  
+}
+
+.listenLinks a{
+  font-size: 20px;
+}
+.details {
+  font-weight: bold;
 }
 .synopsis {
   line-height: 1.6;
@@ -161,6 +176,16 @@ form {
   border-bottom: 2px solid #61dafb;
   font-family: Andale Mono, monospace;
   color: white;
+}
+
+.listenLinks {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: large;
+}
+
+.listenLinks h3 {
+  border-bottom: 3px solid white;
 }
 
 html {
