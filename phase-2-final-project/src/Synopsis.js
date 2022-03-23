@@ -3,7 +3,7 @@ import React from "react"
 function Synopsis({synopsis}){
     return (
         
-        <div>
+        <div className="synopsis">
             {synopsis}
         </div>
     )

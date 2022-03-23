@@ -8,15 +8,16 @@ import NewMovieForm from './NewMovieForm';
 
 
 function App() {
+
   const [movies, setMovies] = useState([])
   const match = useRouteMatch()
-  console.log(movies)
+
 
   useEffect(() => {
     fetch("http://localhost:3000/movies")
         .then((resp) => resp.json())
         .then((data) => setMovies(data)) 
-       
+        
   }, [])
 
 function handleNewMovie(e){

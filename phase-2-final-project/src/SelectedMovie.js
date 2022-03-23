@@ -6,10 +6,8 @@ import { useParams} from "react-router-dom"
 
 
 function SelectedMovie({movie}){
-    console.log(movie[0].id)
 
     let params = useParams()
-    console.log(params.movieId)
     
     let selectedMovie = movie[params.movieId - 1]
     console.log(selectedMovie)
@@ -20,7 +18,9 @@ function SelectedMovie({movie}){
 
     function handleVote(e){
         if (e.target.name === "upvote") {
+                   
             setUpvote(upvote + 1)
+                   
             let data = upvote
             
             fetch(`http://localhost:3000/movies/${selectedMovie.id}`, {
@@ -49,29 +49,26 @@ function SelectedMovie({movie}){
         setMovieInfo(!movieInfo)
     }
     
-    const styles = {
-        underline: {textDecorationLine: 'underline'}
-    }
-    
-   
     return (
        <div className="selectedMovie">
-                
-                <h1 style={styles.underline}>{selectedMovie.title}</h1>
-                    <p className="synopsis">
-                        <Synopsis synopsis={selectedMovie.synopsis}/>
-                        
-                    </p>
-                {movieInfo ? <MovieInfo movie={selectedMovie}/> : null}
-                
-            <Rating upvote={upvote} downvote={downvote} handleVote={handleVote}/>
-            <div>
-                    <img alt={selectedMovie.title} src={selectedMovie.poster} className="Homepage-poster"/>
-                </div>
-                <div>
-                    <button id="showInfoButton" onClick={showMovieInfo}>Show/Hide Movie Info</button>
-                </div>
-            
+            <h1>{selectedMovie.title}</h1>
+            <div className="movieInfoAll">
+                <tbody className="movieInfoBox">
+                    <tr>
+                        <td><img alt={selectedMovie.title} src={selectedMovie.poster} className="selectedMoviePoster"/></td>
+                    </tr>
+                    <tr>
+                        <button id="showInfoButton" onClick={showMovieInfo}>Show/Hide Movie Info</button>
+                        {movieInfo ? <MovieInfo movie={selectedMovie}/> : null}
+                    </tr>
+                    <tr>
+                        <Rating upvote={upvote} downvote={downvote} handleVote={handleVote}/>
+                    </tr>
+                </tbody>           
+                <Synopsis synopsis={selectedMovie.synopsis}/>
+            </div>       
+
+
        </div>
       
    )
