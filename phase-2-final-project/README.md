@@ -1,6 +1,8 @@
 # The Scaredy Pants Podcast 
 
-A podcast discussing horror movies with self-proclaimed horror aficionado Matt Johnson and his movie loving pal, but titular Scaredy Pants Sean Craig. This is a site for us to journal what episodes we've done and where they can be listened to.
+A podcast discussing horror movies with self-proclaimed horror aficionado Matt Johnson and his movie loving pal, but titular Scaredy Pants Sean Craig. 
+
+This is a site for us to journal what episodes we've done and where they can be listened to. It could also add as a reference during our recording.
 
 
 ## Installation

@@ -86,6 +86,18 @@
       ],
       "poster": "https://m.media-amazon.com/images/M/MV5BMTEwNjg2MjM2ODFeQTJeQWpwZ15BbWU4MDQ1MDU5OTEx._V1_.jpg",
       "soundcloud": "https://soundcloud.com/user-948776417/young-frakenstein"
+    },
+    {
+      "id": 8,
+      "title": "An American Werewolf in London",
+      "synopsis": "David (David Naughton) and Jack (Griffin Dunne), two American college students, are backpacking through Britain when a large wolf attacks them. David survives with a bite, but Jack is brutally killed. As David heals in the hospital, he's plagued by violent nightmares of his mutilated friend, who warns David that he is becoming a werewolf. When David discovers the horrible truth, he contemplates committing suicide before the next full moon causes him to transform from man to murderous beast.",
+      "director": "John Landis",
+      "release": "August 21, 1981",
+      "starring": [
+        "David Naughton; Jenny Agutter; Griffin Dunne; John Woodvine"
+      ],
+      "poster": "https://m.media-amazon.com/images/M/MV5BZGNmYWQzMGEtNDlhMS00NzEwLTkzMDItMDQ4MjkyMzRkNjFiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+      "soundcloud": "https://soundcloud.com/user-948776417/american-werewolf-in-london"
     }
   ]
 }
