@@ -41,6 +41,7 @@ function handleNewMovie(e){
   })
 
   setMovies([...movies,data])
+  document.getElementById("newMovieForm").reset()
 }
 
   return (

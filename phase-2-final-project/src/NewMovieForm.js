@@ -6,7 +6,7 @@ function NewMovieForm({handleNewMovie}){
     return (
         <div className="newMovieForm">
             <h3 id="newMovieFormTitle">Add details and then SUBMIT to add new movie</h3>
-            <form onSubmit={handleNewMovie}>
+            <form onSubmit={handleNewMovie} id="newMovieForm">
                 <table>
                     <tr>
                         <td>Title: </td>
@@ -37,7 +37,7 @@ function NewMovieForm({handleNewMovie}){
                         <td><input type="text" name="soundcloud"/></td>    
                     </tr>
                     <tr>
-                        <input type="submit"/>
+                        <td><input type="submit" /></td>
                     </tr>
                 </table>
             </form>
