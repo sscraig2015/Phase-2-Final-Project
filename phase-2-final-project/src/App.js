@@ -16,8 +16,13 @@ function App() {
   useEffect(() => {
     fetch("http://localhost:3000/movies")
         .then((resp) => resp.json())
-        .then((data) => setMovies(data)) 
-        
+        .then((data) => setMovies(data))      
+  }, [])
+
+  useEffect(() => {
+    fetch("http://www.omdbapi.com/?t=Shrek+2&apikey=b4d7d7b5")
+        .then((resp) => resp.json())
+        .then((data) => console.log(data))      
   }, [])
 
 function handleNewMovie(e){
