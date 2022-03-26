@@ -8,9 +8,10 @@ import NewMovieForm from './NewMovieForm';
 
 
 function App() {
-
+ 
   const [movies, setMovies] = useState([])
   const match = useRouteMatch()
+  console.log(match)
 
 
   useEffect(() => {
@@ -19,35 +20,35 @@ function App() {
         .then((data) => setMovies(data))      
   }, [])
 
-  useEffect(() => {
-    fetch("http://www.omdbapi.com/?t=Shrek+2&apikey=b4d7d7b5")
-        .then((resp) => resp.json())
-        .then((data) => console.log(data))      
-  }, [])
+
 
 function handleNewMovie(e){
   e.preventDefault()
   
-  let data = {
-    id: movies.length + 1,
-    title: e.target.title.value,
-    synopsis: e.target.synopsis.value,
-    director: e.target.director.value,
-    release: e.target.release.value,
-    starring: [e.target.starring.value],
-    poster: e.target.poster.value,
-    soundcloud: e.target.soundcloud.value,
-  }
+  document.getElementById("newMovieForm").reset() 
+  let movieTitle = e.target.movieTitle.value.split(' ').join('+')
+  let soundcloud = e.target.soundcloud.value
+  
+  fetch(`http://www.omdbapi.com/?t=${movieTitle}&plot=full&apikey=b4d7d7b5`)
+        .then((resp) => resp.json())
+        .then((searchedMovie) => {
+            searchedMovie.soundcloud = soundcloud
+            searchedMovie.id = movies.length + 1
+            console.log(searchedMovie)
+            return searchedMovie
+          })
+        .then((movie) => {
+          fetch("http://localhost:3000/movies",{
+              method: "POST",
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(movie)
+          })  
+          setMovies([...movies, movie]) 
+        })
+      }             
 
-  fetch("http://localhost:3000/movies", {
-    method: "POST",
-    headers: { 'Content-Type': 'application/json'},
-    body: JSON.stringify(data)
-  })
-
-  setMovies([...movies,data])
-  document.getElementById("newMovieForm").reset()
-}
 
   return (
     <div>      

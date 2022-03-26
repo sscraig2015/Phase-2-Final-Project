@@ -4,10 +4,9 @@ function MovieInfo({movie}){
     return (
         <div className="movieDetails">
             
-            <span className="details">Director:</span> {movie.director}<br/>
-            <span className="details">Released:</span> {movie.release}<br/>
-            <span className="details">Starring:</span> {movie.starring.map((actor) => {
-                        return (`${actor}, `)})}<br/>
+            <span className="details">Director:</span> {movie.Director}<br/>
+            <span className="details">Released:</span> {movie.Released}<br/>
+            <span className="details">Starring:</span> {movie.Actors}<br/>
         </div>
     )
 }
