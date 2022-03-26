@@ -11,8 +11,6 @@ function App() {
  
   const [movies, setMovies] = useState([])
   const match = useRouteMatch()
-  console.log(match)
-
 
   useEffect(() => {
     fetch("http://localhost:3000/movies")
@@ -25,7 +23,6 @@ function App() {
 function handleNewMovie(e){
   e.preventDefault()
   
-  document.getElementById("newMovieForm").reset() 
   let movieTitle = e.target.movieTitle.value.split(' ').join('+')
   let soundcloud = e.target.soundcloud.value
   
@@ -46,6 +43,7 @@ function handleNewMovie(e){
               body: JSON.stringify(movie)
           })  
           setMovies([...movies, movie]) 
+          document.getElementById("newMovieForm").reset() 
         })
       }             
 
@@ -61,7 +59,7 @@ function handleNewMovie(e){
         <Route  path="/addNewMovie/">
           <NewMovieForm handleNewMovie={handleNewMovie}/>
         </Route>
-        <Route  path={`${match.url}:movieId`}>
+        <Route  path={`${match.url}:movieTitle`}>
           <SelectedMovie movie={movies} />
         </Route>
         <Route  path="/">

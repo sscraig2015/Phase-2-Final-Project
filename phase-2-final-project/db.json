@@ -1,175 +1,88 @@
 {
   "movies": [
     {
-      "id": 1,
-      "title": "The Thing",
-      "synopsis": "In remote Antarctica, a group of American research scientists are disturbed at their base camp by a helicopter shooting at a sled dog. When they take in the dog, it brutally attacks both human beings and canines in the camp and they discover that the beast can assume the shape of its victims. A resourceful helicopter pilot (Kurt Russell) and the camp doctor (Richard Dysart) lead the camp crew in a desperate, gory battle against the vicious creature before it picks them all off, one by one.",
-      "director": "John Carpenter",
-      "release": "June 25, 1982",
-      "starring": [
-        "Kurt Russel"
+      "Title": "Shrek",
+      "Year": "2001",
+      "Rated": "PG",
+      "Released": "18 May 2001",
+      "Runtime": "90 min",
+      "Genre": "Animation, Adventure, Comedy",
+      "Director": "Andrew Adamson, Vicky Jenson",
+      "Writer": "William Steig, Ted Elliott, Terry Rossio",
+      "Actors": "Mike Myers, Eddie Murphy, Cameron Diaz",
+      "Plot": "When a green ogre named Shrek discovers his swamp has been 'swamped' with all sorts of fairytale creatures by the scheming Lord Farquaad, Shrek sets out with a very loud donkey by his side to 'persuade' Farquaad to give Shrek his swamp back. Instead, a deal is made. Farquaad, who wants to become the King, sends Shrek to rescue Princess Fiona, who is awaiting her true love in a tower guarded by a fire-breathing dragon. But once they head back with Fiona, it starts to become apparent that not only does Shrek, an ugly ogre, begin to fall in love with the lovely princess, but Fiona is also hiding a huge secret.",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "Won 1 Oscar. 40 wins & 60 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOGZhM2FhNTItODAzNi00YjA0LWEyN2UtNjJlYWQzYzU1MDg5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.9/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "88%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "84/100"
+        }
       ],
-      "poster": "https://m.media-amazon.com/images/M/MV5BNGViZWZmM2EtNGYzZi00ZDAyLTk3ODMtNzIyZTBjN2Y1NmM1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
-    },
-    {
-      "id": 2,
-      "title": "Toy Story",
-      "synopsis": "Woody (Tom Hanks), a good-hearted cowboy doll who belongs to a young boy named Andy (John Morris), sees his position as Andy's favorite toy jeopardized when his parents buy him a Buzz Lightyear (Tim Allen) action figure. Even worse, the arrogant Buzz thinks he's a real spaceman on a mission to return to his home planet. When Andy's family moves to a new house, Woody and Buzz must escape the clutches of maladjusted neighbor Sid Phillips (Erik von Detten) and reunite with their boy.",
-      "director": "John Lasseter",
-      "release": "November 22, 1995",
-      "starring": [
-        "Tom Hanks, Tim Allen"
-      ],
-      "poster": "https://mypostercollection.com/wp-content/uploads/2019/07/toy-story-poster-676x1024.jpg"
-    },
-    {
-      "id": 3,
-      "title": "The Treasure of the Sierra Madre",
-      "synopsis": "In this classic adventure film, two rough-and-tumble wanderers, Dobbs (Humphrey Bogart) and Curtin (Tim Holt), meet up with a veteran prospector, Howard (Walter Huston), in Mexico and head into the Sierra Madre mountains to find gold. Although they discover treasure, they also find plenty of trouble, not only from ruthless bandits lurking in the dangerous Mexican wilderness but from their own insecurities and greed, which threaten to bring conflict at any moment.",
-      "director": "John Huston",
-      "release": "January 6, 1948",
-      "starring": [
-        "Humphrey Bogart",
-        "Walter Huston",
-        "Tim Holt",
-        "Bruce Bennett"
-      ],
-      "poster": "https://dyn1.heritagestatic.com/lf?set=path%5B7%2F7%2F2%2F772911%5D&call=url%5Bfile%3Aproduct.chain%5D"
-    },
-    {
-      "id": 4,
-      "title": "CatWoman",
-      "synopsis": "Catwoman is the story of shy, sensitive artist Patience Philips (Halle Berry), a woman who can't seem to stop apologizing for her own existence. She works as a graphic designer for Hedare Beauty, a mammoth cosmetics company on the verge of releasing a revolutionary anti-aging product. When Patience inadvertently happens upon a dark secret her employer is hiding, she finds herself in the middle of a corporate conspiracy. What happens next changes Patience forever.",
-      "director": "Pitof",
-      "release": "July 19, 2004",
-      "starring": [
-        "Halley Berry",
-        "Benjamin Bratt",
-        "Lambert Wilson"
-      ],
-      "poster": "https://vanyaland.com/wp-content/uploads/2017/05/Catwoman-Poster.jpg"
-    },
-    {
-      "id": 5,
-      "title": "Jack and Jill",
-      "synopsis": "Thanksgiving is usually a happy time, but ad executive Jack (Adam Sandler) dreads the holiday because his twin sister, Jill (also Sandler), makes her annual visit. When Jack and his sister get off on the wrong foot, the only way to make it right is to invite her to stay through Hanukkah. But, when actor Al Pacino (Al Pacino), whom Jack desperately needs to star in a commercial, takes a shine to Jill, Jack may be forced to extend his sister's visit even longer.",
-      "director": "Dennis Dugan",
-      "release": "November 11, 2011",
-      "starring": [
-        "Adam Sandler",
-        "Katie Holmes",
-        "Al Pacino"
-      ],
-      "poster": "https://m.media-amazon.com/images/I/81IkCfVtKKL._AC_SY550_.jpg"
-    },
-    {
-      "id": 6,
-      "title": "Scent of a Woman",
-      "urltitle": "Scent of a Woman",
-      "synopsis": "Frank is a retired Lt. Col. in the US army. He's blind and impossible to get along with. Charlie is at school and is looking forward to going to college. To help pay for a trip home for Christmas, he agrees to look after Frank over Thanksgiving. Frank's niece says this will be easy money, but she didn't reckon on Frank spending his Thanksgiving in New York.",
-      "director": "Martin Brest",
-      "release": "December 23, 1992",
-      "starring": [
-        "Al Pacino, Chris O’Donnell, Gabrielle Anwar"
-      ],
-      "poster": "https://m.media-amazon.com/images/M/MV5BZTM3ZjA3NTctZThkYy00ODYyLTk2ZjItZmE0MmZlMTk3YjQwXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg"
-    },
-    {
-      "id": 7,
-      "title": "Young Frankenstein",
-      "urltitle": "Young Frankenstein",
-      "synopsis": "Respected medical lecturer Dr. Frederick Frankenstein (Gene Wilder) learns that he has inherited his infamous grandfather's estate in Transylvania. Arriving at the castle, Dr. Frankenstein soon begins to recreate his grandfather's experiments with the help of servants Igor (Marty Feldman), Inga (Teri Garr) and the fearsome Frau Blücher (Cloris Leachman). After he creates his own monster (Peter Boyle), new complications ensue with the arrival of the doctor's fiancée, Elizabeth (Madeline Kahn).",
-      "director": "Mel Brooks",
-      "release": "December 15, 1974",
-      "starring": [
-        "Gene Wilder"
-      ],
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTEwNjg2MjM2ODFeQTJeQWpwZ15BbWU4MDQ1MDU5OTEx._V1_.jpg",
-      "soundcloud": "https://soundcloud.com/user-948776417/young-frakenstein"
-    },
-    {
-      "id": 8,
-      "title": "An American Werewolf in London",
-      "synopsis": "David (David Naughton) and Jack (Griffin Dunne), two American college students, are backpacking through Britain when a large wolf attacks them. David survives with a bite, but Jack is brutally killed. As David heals in the hospital, he's plagued by violent nightmares of his mutilated friend, who warns David that he is becoming a werewolf. When David discovers the horrible truth, he contemplates committing suicide before the next full moon causes him to transform from man to murderous beast.",
-      "director": "John Landis",
-      "release": "August 21, 1981",
-      "starring": [
-        "David Naughton; Jenny Agutter; Griffin Dunne; John Woodvine"
-      ],
-      "poster": "https://m.media-amazon.com/images/M/MV5BZGNmYWQzMGEtNDlhMS00NzEwLTkzMDItMDQ4MjkyMzRkNjFiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
-      "soundcloud": "https://soundcloud.com/user-948776417/american-werewolf-in-london"
-    },
-    {
-      "id": 9,
-      "title": "The Exorcist",
-      "synopsis": "One of the most profitable horror movies ever made, this tale of an exorcism is based loosely on actual events. When young Regan (Linda Blair) starts acting odd -- levitating, speaking in tongues -- her worried mother (Ellen Burstyn) seeks medical help, only to hit a dead end. A local priest (Jason Miller), however, thinks the girl may be seized by the devil. The priest makes a request to perform an exorcism, and the church sends in an expert (Max von Sydow) to help with the difficult job.",
-      "director": "William Friedkin",
-      "release": "December 26, 1973",
-      "starring": [
-        "Linda Denise Blair"
-      ],
-      "poster": "https://tinyurl.com/hs9sf3eb",
-      "soundcloud": "https://soundcloud.com/user-948776417/the-exorcist"
-    },
-    {
-      "id": 10,
-      "title": "Black Christmas",
-      "synopsis": "As winter break begins, a group of sorority sisters, including Jess (Olivia Hussey) and the often inebriated Barb (Margot Kidder), begin to receive anonymous, lascivious phone calls. Initially, Barb eggs the caller on, but stops when he responds threateningly. Soon, Barb's friend Claire (Lynne Griffin) goes missing from the sorority house, and a local adolescent girl is murdered, leading the girls to suspect a serial killer is on the loose. But no one realizes just how near the culprit is.",
-      "director": "Bob Clark",
-      "release": "December 20, 1974",
-      "starring": [
-        "Olivia Hussey; Keir Dullea; Margot Kidder; John Saxon"
-      ],
-      "poster": "https://tinyurl.com/u8ajs7vs",
-      "soundcloud": "https://soundcloud.com/user-948776417/black-christmas"
-    },
-    {
-      "id": 11,
-      "title": "The Hills Have Eyes",
-      "synopsis": "Wes Craven's cult classic about cannibalistic mountain folk, including the Carter family, who are on the trail of stranded vacationers in the arid Southwest Californian desert.",
-      "director": "Wes Craven",
-      "release": "July 22, 1977",
-      "starring": [
-        "Susan Lanier, Rober Houston, John Steadman"
-      ],
-      "poster": " https://tinyurl.com/dka9jvcx",
-      "soundcloud": "https://soundcloud.com/user-948776417/the-hills-have-eyes"
-    },
-    {
-      "id": 12,
-      "title": "The Changeling",
-      "synopsis": "Composer John Russell (George C. Scott) is vacationing with his family when a car accident kills his wife and daughter. Distraught with grief, Russell leaves his home in New York City for a giant, secluded house near Seattle. Soon Russell starts to feel the presence of a ghost, a boy who drowned in the bathtub there. Russell seeks the assistance of Claire Norman (Trish Van Devere), who led him to the house initially, in uncovering the secrets of the boy's death.",
-      "director": "Peter Medak",
-      "release": "March 28, 1980",
-      "starring": [
-        "George C. Scott; Trish Van Devere; Melvyn Douglas; John Colicos; Jean Marsh; Helen Burns; Madeleine Sherwood"
-      ],
-      "poster": "https://tinyurl.com/ykv3w4a9",
-      "soundcloud": "https://soundcloud.com/user-948776417/the-changeling"
-    },
-    {
-      "id": 13,
-      "title": "Opera",
-      "synopsis": "Opera (also known and released as Terror at the Opera)[3][4] is a 1987 Italian giallo slasher film directed and co-written by Dario Argento and starring Cristina Marsillach, Urbano Barberini, Daria Nicolodi, and Ian Charleson. The film's plot focuses on a young soprano (Marsillach) who becomes involved in a series of murders being committed inside an opera house by a masked assailant. The film features music composed and performed by Brian Eno, Claudio Simonetti, and Bill Wyman.",
-      "director": "Dario Argento",
-      "release": "December 19, 1987",
-      "starring": [
-        "Cristina Marsillach ,Ian Charleson, Daria Nicolodi, Urbano Barberini, Coralina, Cataldi-Tassoni, William McNamara"
-      ],
-      "poster": "https://tinyurl.com/42cjuyab",
-      "soundcloud": "https://soundcloud.com/user-948776417/opera"
-    },
-    {
-      "Response": "False",
-      "Error": "Incorrect IMDb ID.",
+      "Metascore": "84",
+      "imdbRating": "7.9",
+      "imdbVotes": "651,919",
+      "imdbID": "tt0126029",
+      "Type": "movie",
+      "DVD": "19 Aug 2003",
+      "BoxOffice": "$267,665,011",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
       "soundcloud": "",
-      "id": 14
+      "id": 3
     },
     {
-      "Response": "False",
-      "Error": "Incorrect IMDb ID.",
+      "Title": "Midsommar",
+      "Year": "2019",
+      "Rated": "R",
+      "Released": "03 Jul 2019",
+      "Runtime": "148 min",
+      "Genre": "Drama, Horror, Mystery",
+      "Director": "Ari Aster",
+      "Writer": "Ari Aster",
+      "Actors": "Florence Pugh, Jack Reynor, Vilhelm Blomgren",
+      "Plot": "Dani (Florence Pugh) and Christian (Jack Reynor) are a young American couple with a relationship on the brink of falling apart. But after a family tragedy keeps them together, Christian invites a grieving Dani to join him and his friends on a trip to a once-in-a-lifetime midsummer festival in a remote Swedish village. What begins as a carefree summer holiday in the North European land of eternal sunlight takes a sinister turn when the insular villagers invite their guests to partake in festivities that render the pastoral paradise increasingly unnerving and viscerally disturbing.",
+      "Language": "English, Swedish",
+      "Country": "United States, Sweden",
+      "Awards": "27 wins & 77 nominations",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.1/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "83%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "72/100"
+        }
+      ],
+      "Metascore": "72",
+      "imdbRating": "7.1",
+      "imdbVotes": "276,733",
+      "imdbID": "tt8772262",
+      "Type": "movie",
+      "DVD": "24 Sep 2019",
+      "BoxOffice": "$27,426,361",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
       "soundcloud": "",
-      "id": 15
+      "id": 4
     }
   ]
 }

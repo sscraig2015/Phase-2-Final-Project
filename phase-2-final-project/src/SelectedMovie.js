@@ -7,13 +7,11 @@ import { useParams} from "react-router-dom"
 
 function SelectedMovie({movie}){
 
-    console.log(movie)
     let params = useParams()
-    console.log(params)
-    
-    let selectedMovie = movie[params.movieId - 1]
-    console.log(selectedMovie)
-    
+
+
+    const selectedMovie = movie.find((movie) => movie.Title === params.movieTitle)
+   
     const [movieInfo, setMovieInfo] = useState(false)
     
     function showMovieInfo(){
