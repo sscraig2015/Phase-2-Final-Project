@@ -10,6 +10,7 @@ import NewMovieForm from './NewMovieForm';
 function App() {
  
   const [alert, setAlert] = useState(false)
+  
   const [movies, setMovies] = useState([])
   const match = useRouteMatch()
 
@@ -22,16 +23,17 @@ function App() {
 
 function validatesUserMovie(e){
   e.preventDefault()
+ 
+  const doesMatch = (film) => !(film.Title === e.target.movieTitle.value)
+  console.log(movies.every(doesMatch))
 
-  let searchedMovie = movies.find((film) => film.title === e.target.movieTitle.value)
-  console.log(searchedMovie)
-  if(searchedMovie) {
-    console.log(typeof searchedMovie)
-    return setAlert(true)
-  } else {
-    handleNewMovie(searchedMovie)
+  if (movies.every(doesMatch)) {
+        handleNewMovie(e)
+        console.log('new movie')
+    } else {
+        console.log('already entered')
+    }
   }
-}
 
 
 function handleNewMovie(e){
@@ -45,7 +47,7 @@ function handleNewMovie(e){
         .then((searchedMovie) => {
             searchedMovie.soundcloud = soundcloud
             searchedMovie.id = movies.length + 1
-            console.log(searchedMovie)
+            
             return searchedMovie
           })
         .then((movie) => {
@@ -62,7 +64,6 @@ function handleNewMovie(e){
         })
       }             
 
-
   return (
     <div>      
       <img id="homepageLogo" alt='title' src='https://tinyurl.com/5n8r4rtz' />
@@ -72,7 +73,7 @@ function handleNewMovie(e){
       </div>
       <Switch>
         <Route  path="/addNewMovie/">
-          <NewMovieForm alert={alert} handleNewMovie={validatesUserMovie}/>
+          <NewMovieForm alert={alert} validatesUserMovie={validatesUserMovie}/>
         </Route>
         <Route  path={`${match.url}:movieTitle`}>
           <SelectedMovie movie={movies} />

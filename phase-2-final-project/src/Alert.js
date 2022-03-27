@@ -1,13 +1,14 @@
 
-function Alert(){
+function Alert(status){
     
-    setTimeout(() => {
-        return (
-            <div>
-                WORKING
-            </div>
-        )
-        }, 10000)
+    if (status){
+        console.log('search true')
+        return <h2>working</h2>
+
+    } else {
+        console.log('search false')
+        return <h2>working</h2>
+    }
 
 }
 
