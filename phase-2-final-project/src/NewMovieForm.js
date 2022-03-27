@@ -1,12 +1,13 @@
 import React from "react"
+import Alert from "./Alert"
 
-
-function NewMovieForm({handleNewMovie}){
+function NewMovieForm({validateUserMovie, alert}){
 
     return (
         <div className="newMovieForm">
             <h3 id="newMovieFormTitle">Add details and then SUBMIT to add new movie</h3>
-            <form onSubmit={handleNewMovie} id="newMovieForm">
+            {alert ? <Alert /> : null}
+            <form onSubmit={validateUserMovie} id="newMovieForm">
                 <table>
                     <tr>
                         <td>Soundcloud Link: </td>

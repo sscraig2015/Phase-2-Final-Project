@@ -9,6 +9,7 @@ import NewMovieForm from './NewMovieForm';
 
 function App() {
  
+  const [alert, setAlert] = useState(false)
   const [movies, setMovies] = useState([])
   const match = useRouteMatch()
 
@@ -18,6 +19,19 @@ function App() {
         .then((data) => setMovies(data))      
   }, [])
 
+
+function validatesUserMovie(e){
+  e.preventDefault()
+
+  let searchedMovie = movies.find((film) => film.title === e.target.movieTitle.value)
+  console.log(searchedMovie)
+  if(searchedMovie) {
+    console.log(typeof searchedMovie)
+    return setAlert(true)
+  } else {
+    handleNewMovie(searchedMovie)
+  }
+}
 
 
 function handleNewMovie(e){
@@ -36,6 +50,7 @@ function handleNewMovie(e){
           })
         .then((movie) => {
           fetch("http://localhost:3000/movies",{
+
               method: "POST",
               headers: {
                 'Content-Type': 'application/json'
@@ -57,7 +72,7 @@ function handleNewMovie(e){
       </div>
       <Switch>
         <Route  path="/addNewMovie/">
-          <NewMovieForm handleNewMovie={handleNewMovie}/>
+          <NewMovieForm alert={alert} handleNewMovie={validatesUserMovie}/>
         </Route>
         <Route  path={`${match.url}:movieTitle`}>
           <SelectedMovie movie={movies} />
