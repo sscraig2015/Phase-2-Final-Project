@@ -19,35 +19,23 @@ function App() {
         .then((data) => setMovies(data))      
   }, [])
 
+function handleNewMovie(movieObj, soundcloud){
 
+  movieObj.soundcloud = soundcloud
+  movieObj.id = movies.length + 1
 
-function handleNewMovie(e){
-  e.preventDefault()
-  
-  let movieTitle = e.target.movieTitle.value.split(' ').join('+')
-  let soundcloud = e.target.soundcloud.value
-  
-  fetch(`http://www.omdbapi.com/?t=${movieTitle}&plot=full&apikey=b4d7d7b5`)
-        .then((resp) => resp.json())
-        .then((searchedMovie) => {
-            searchedMovie.soundcloud = soundcloud
-            searchedMovie.id = movies.length + 1
-            
-            return searchedMovie
-          })
-        .then((movie) => {
-          fetch("http://localhost:3000/movies",{
+  fetch("http://localhost:3000/movies",{
+    method: "POST",
+    headers: {
+      'Content-Type': 'application/json'
+      },
+    body: JSON.stringify(movieObj)
+      })  
+    
+    setMovies([...movies, movieObj]) 
+    document.getElementById("newMovieForm").reset() 
 
-              method: "POST",
-              headers: {
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify(movie)
-          })  
-          setMovies([...movies, movie]) 
-          document.getElementById("newMovieForm").reset() 
-        })
-      }             
+}             
 
   return (
     <div>      

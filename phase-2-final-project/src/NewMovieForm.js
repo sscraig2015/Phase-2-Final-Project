@@ -4,21 +4,41 @@ import { useState } from "react"
 
 function NewMovieForm({movies, handleNewMovie}){
     
-    const [alert, setAlert] = useState(null)
+    const [alertStatus, setAlertStatus] = useState(false)
+    const [answer, setAnswer] = useState(null)
       
-    function validatesUserMovie(e){
+    function findSearchedMovie(e){
         e.preventDefault()
         
-        const doesntMatch = (film) => !(film.Title.toLowerCase() === e.target.movieTitle.value.toLowerCase())
-        console.log(movies.every(doesntMatch))
+        let movieTitle = e.target.movieTitle.value.split(' ').join('+')
+        let soundcloud = e.target.soundcloud.value
+  
+        fetch(`http://www.omdbapi.com/?t=${movieTitle}&plot=full&apikey=b4d7d7b5`)
+            .then((resp) => resp.json())
+            .then((resp) => {
+            if (resp.Response === "False") {
+                console.log("movie not found")
+            } else {
+                console.log(resp)
+                validateSearchedMovie(resp, soundcloud)
+            }
+            })
+    }
+        
+    function validateSearchedMovie(movieObj, soundcloud) {
+        
+        const doesntMatch = (film) => !(film.Title.toLowerCase() === movieObj.Title.toLowerCase())
       
         if (movies.every(doesntMatch)) {
-              handleNewMovie(e)
-              console.log('new movie')
-              setAlert(true)
+            handleNewMovie(movieObj, soundcloud)
+            setAnswer(true)
+            setAlertStatus(true)
+            console.log('new movie')
+              
           } else {
               console.log('already entered')
-              setAlert(false)
+              setAnswer(false)
+              setAlertStatus(true)
           }
     }
     
@@ -26,13 +46,13 @@ function NewMovieForm({movies, handleNewMovie}){
         
         <div className="newMovieForm">
             <h3 id="newMovieFormTitle">Add details and then SUBMIT to add new movie</h3>
-            {alert ? <Alert status={true}/> : <Alert status={false}/>}
-            <form onSubmit={validatesUserMovie} id="newMovieForm">
+            {alertStatus ? <Alert answer={answer} setAlertStatus = {setAlertStatus}/> : null}
+            <form onSubmit={findSearchedMovie} id="newMovieForm">
                 <table>
                     <tbody>
                         <tr>
                             <td>Soundcloud Link: </td>
-                            <td><input type="text" name="soundcloud"/></td>    
+                          <td><input type="text" name="soundcloud"/></td>    
                         </tr>
                         <tr>
                             <td>Movie Title</td>

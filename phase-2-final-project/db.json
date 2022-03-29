@@ -1,6 +1,48 @@
 {
   "movies": [
     {
+      "Title": "The Texas Chainsaw Massacre",
+      "Year": "2003",
+      "Rated": "R",
+      "Released": "17 Oct 2003",
+      "Runtime": "98 min",
+      "Genre": "Crime, Horror",
+      "Director": "Marcus Nispel",
+      "Writer": "Kim Henkel, Tobe Hooper, Scott Kosar",
+      "Actors": "Jessica Biel, Jonathan Tucker, Andrew Bryniarski",
+      "Plot": "Driving through the backwoods of Texas, five youths pick up a traumatized hitchhiker, who shoots herself in their van. Shaken by the suicide, the group seeks help from the locals, but their situation becomes even more surreal when they knock on the door of a remote homestead. It's quickly apparent the residents are a family of inbred psychopaths, and the unlucky youths suddenly find themselves running for their lives. In hot pursuit is a disfigured, chainsaw-wielding cannibal known as Leatherface.",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "4 wins & 17 nominations",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZDg2NDJkOGYtMjM3My00Mzc2LWJiYjktODFlMzBjNmQwMTEyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.2/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "37%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "38/100"
+        }
+      ],
+      "Metascore": "38",
+      "imdbRating": "6.2",
+      "imdbVotes": "139,924",
+      "imdbID": "tt0324216",
+      "Type": "movie",
+      "DVD": "30 Mar 2004",
+      "BoxOffice": "$80,571,655",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "soundcloud": "",
+      "id": 1
+    },
+    {
       "Title": "Star Wars",
       "Year": "1977",
       "Rated": "PG",
@@ -36,48 +78,6 @@
       "Type": "movie",
       "DVD": "06 Dec 2005",
       "BoxOffice": "$460,998,507",
-      "Production": "N/A",
-      "Website": "N/A",
-      "Response": "True",
-      "soundcloud": "",
-      "id": 1
-    },
-    {
-      "Title": "Shrek",
-      "Year": "2001",
-      "Rated": "PG",
-      "Released": "18 May 2001",
-      "Runtime": "90 min",
-      "Genre": "Animation, Adventure, Comedy",
-      "Director": "Andrew Adamson, Vicky Jenson",
-      "Writer": "William Steig, Ted Elliott, Terry Rossio",
-      "Actors": "Mike Myers, Eddie Murphy, Cameron Diaz",
-      "Plot": "When a green ogre named Shrek discovers his swamp has been 'swamped' with all sorts of fairytale creatures by the scheming Lord Farquaad, Shrek sets out with a very loud donkey by his side to 'persuade' Farquaad to give Shrek his swamp back. Instead, a deal is made. Farquaad, who wants to become the King, sends Shrek to rescue Princess Fiona, who is awaiting her true love in a tower guarded by a fire-breathing dragon. But once they head back with Fiona, it starts to become apparent that not only does Shrek, an ugly ogre, begin to fall in love with the lovely princess, but Fiona is also hiding a huge secret.",
-      "Language": "English",
-      "Country": "United States",
-      "Awards": "Won 1 Oscar. 40 wins & 60 nominations total",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BOGZhM2FhNTItODAzNi00YjA0LWEyN2UtNjJlYWQzYzU1MDg5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-      "Ratings": [
-        {
-          "Source": "Internet Movie Database",
-          "Value": "7.9/10"
-        },
-        {
-          "Source": "Rotten Tomatoes",
-          "Value": "88%"
-        },
-        {
-          "Source": "Metacritic",
-          "Value": "84/100"
-        }
-      ],
-      "Metascore": "84",
-      "imdbRating": "7.9",
-      "imdbVotes": "655,237",
-      "imdbID": "tt0126029",
-      "Type": "movie",
-      "DVD": "19 Aug 2003",
-      "BoxOffice": "$268,163,011",
       "Production": "N/A",
       "Website": "N/A",
       "Response": "True",
