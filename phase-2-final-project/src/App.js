@@ -9,8 +9,7 @@ import NewMovieForm from './NewMovieForm';
 
 function App() {
  
-  const [alert, setAlert] = useState(false)
-  
+
   const [movies, setMovies] = useState([])
   const match = useRouteMatch()
 
@@ -20,20 +19,6 @@ function App() {
         .then((data) => setMovies(data))      
   }, [])
 
-
-function validatesUserMovie(e){
-  e.preventDefault()
- 
-  const doesMatch = (film) => !(film.Title === e.target.movieTitle.value)
-  console.log(movies.every(doesMatch))
-
-  if (movies.every(doesMatch)) {
-        handleNewMovie(e)
-        console.log('new movie')
-    } else {
-        console.log('already entered')
-    }
-  }
 
 
 function handleNewMovie(e){
@@ -73,7 +58,7 @@ function handleNewMovie(e){
       </div>
       <Switch>
         <Route  path="/addNewMovie/">
-          <NewMovieForm alert={alert} validatesUserMovie={validatesUserMovie}/>
+          <NewMovieForm handleNewMovie={handleNewMovie} movies={movies}/>
         </Route>
         <Route  path={`${match.url}:movieTitle`}>
           <SelectedMovie movie={movies} />

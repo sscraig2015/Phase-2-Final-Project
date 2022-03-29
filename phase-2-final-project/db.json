@@ -1,130 +1,46 @@
 {
   "movies": [
     {
-      "Title": "The Texas Chainsaw Massacre",
-      "Year": "2003",
-      "Rated": "R",
-      "Released": "17 Oct 2003",
-      "Runtime": "98 min",
-      "Genre": "Crime, Horror",
-      "Director": "Marcus Nispel",
-      "Writer": "Kim Henkel, Tobe Hooper, Scott Kosar",
-      "Actors": "Jessica Biel, Jonathan Tucker, Andrew Bryniarski",
-      "Plot": "Driving through the backwoods of Texas, five youths pick up a traumatized hitchhiker, who shoots herself in their van. Shaken by the suicide, the group seeks help from the locals, but their situation becomes even more surreal when they knock on the door of a remote homestead. It's quickly apparent the residents are a family of inbred psychopaths, and the unlucky youths suddenly find themselves running for their lives. In hot pursuit is a disfigured, chainsaw-wielding cannibal known as Leatherface.",
+      "Title": "Star Wars",
+      "Year": "1977",
+      "Rated": "PG",
+      "Released": "25 May 1977",
+      "Runtime": "121 min",
+      "Genre": "Action, Adventure, Fantasy",
+      "Director": "George Lucas",
+      "Writer": "George Lucas",
+      "Actors": "Mark Hamill, Harrison Ford, Carrie Fisher",
+      "Plot": "The Imperial Forces, under orders from cruel Darth Vader, hold Princess Leia hostage in their efforts to quell the rebellion against the Galactic Empire. Luke Skywalker and Han Solo, captain of the Millennium Falcon, work together with the companionable droid duo R2-D2 and C-3PO to rescue the beautiful princess, help the Rebel Alliance and restore freedom and justice to the Galaxy.",
       "Language": "English",
       "Country": "United States",
-      "Awards": "4 wins & 17 nominations",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BZDg2NDJkOGYtMjM3My00Mzc2LWJiYjktODFlMzBjNmQwMTEyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      "Awards": "Won 7 Oscars. 63 wins & 29 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
       "Ratings": [
         {
           "Source": "Internet Movie Database",
-          "Value": "6.2/10"
+          "Value": "8.6/10"
         },
         {
           "Source": "Rotten Tomatoes",
-          "Value": "37%"
+          "Value": "92%"
         },
         {
           "Source": "Metacritic",
-          "Value": "38/100"
+          "Value": "90/100"
         }
       ],
-      "Metascore": "38",
-      "imdbRating": "6.2",
-      "imdbVotes": "139,924",
-      "imdbID": "tt0324216",
+      "Metascore": "90",
+      "imdbRating": "8.6",
+      "imdbVotes": "1,312,386",
+      "imdbID": "tt0076759",
       "Type": "movie",
-      "DVD": "30 Mar 2004",
-      "BoxOffice": "$80,571,655",
+      "DVD": "06 Dec 2005",
+      "BoxOffice": "$460,998,507",
       "Production": "N/A",
       "Website": "N/A",
       "Response": "True",
       "soundcloud": "",
       "id": 1
-    },
-    {
-      "Title": "Candyman",
-      "Year": "1992",
-      "Rated": "R",
-      "Released": "16 Oct 1992",
-      "Runtime": "99 min",
-      "Genre": "Horror, Thriller",
-      "Director": "Bernard Rose",
-      "Writer": "Clive Barker, Bernard Rose",
-      "Actors": "Virginia Madsen, Xander Berkeley, Tony Todd",
-      "Plot": "Helen Lyle is a student who decides to write a thesis about local legends and myths. She visits a part of the town, where she learns about the legend of the Candyman, a one-armed man who appears when you say his name five times, in front of a mirror. Of course, Helen doesn't believe all this stuff, but the people of the area are really afraid. When she ignores their warnings and begins her investigation in the places that he is rumored to appear, a series of horrible murders begins. Could the legend be true?",
-      "Language": "English",
-      "Country": "United States, United Kingdom",
-      "Awards": "5 wins & 10 nominations",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BYjVjYjhlNTQtN2UxOC00Njk5LWFjNDctODNjZTI1ZGM0ZDZkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-      "Ratings": [
-        {
-          "Source": "Internet Movie Database",
-          "Value": "6.7/10"
-        },
-        {
-          "Source": "Rotten Tomatoes",
-          "Value": "78%"
-        },
-        {
-          "Source": "Metacritic",
-          "Value": "61/100"
-        }
-      ],
-      "Metascore": "61",
-      "imdbRating": "6.7",
-      "imdbVotes": "87,730",
-      "imdbID": "tt0103919",
-      "Type": "movie",
-      "DVD": "17 Aug 2004",
-      "BoxOffice": "$25,792,310",
-      "Production": "N/A",
-      "Website": "N/A",
-      "Response": "True",
-      "soundcloud": "",
-      "id": 2
-    },
-    {
-      "Title": "Midsommar",
-      "Year": "2019",
-      "Rated": "R",
-      "Released": "03 Jul 2019",
-      "Runtime": "148 min",
-      "Genre": "Drama, Horror, Mystery",
-      "Director": "Ari Aster",
-      "Writer": "Ari Aster",
-      "Actors": "Florence Pugh, Jack Reynor, Vilhelm Blomgren",
-      "Plot": "Dani (Florence Pugh) and Christian (Jack Reynor) are a young American couple with a relationship on the brink of falling apart. But after a family tragedy keeps them together, Christian invites a grieving Dani to join him and his friends on a trip to a once-in-a-lifetime midsummer festival in a remote Swedish village. What begins as a carefree summer holiday in the North European land of eternal sunlight takes a sinister turn when the insular villagers invite their guests to partake in festivities that render the pastoral paradise increasingly unnerving and viscerally disturbing.",
-      "Language": "English, Swedish",
-      "Country": "United States, Sweden",
-      "Awards": "27 wins & 77 nominations",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_SX300.jpg",
-      "Ratings": [
-        {
-          "Source": "Internet Movie Database",
-          "Value": "7.1/10"
-        },
-        {
-          "Source": "Rotten Tomatoes",
-          "Value": "83%"
-        },
-        {
-          "Source": "Metacritic",
-          "Value": "72/100"
-        }
-      ],
-      "Metascore": "72",
-      "imdbRating": "7.1",
-      "imdbVotes": "276,733",
-      "imdbID": "tt8772262",
-      "Type": "movie",
-      "DVD": "24 Sep 2019",
-      "BoxOffice": "$27,426,361",
-      "Production": "N/A",
-      "Website": "N/A",
-      "Response": "True",
-      "soundcloud": "",
-      "id": 3
     },
     {
       "Title": "Shrek",
@@ -157,16 +73,16 @@
       ],
       "Metascore": "84",
       "imdbRating": "7.9",
-      "imdbVotes": "651,919",
+      "imdbVotes": "655,237",
       "imdbID": "tt0126029",
       "Type": "movie",
       "DVD": "19 Aug 2003",
-      "BoxOffice": "$267,665,011",
+      "BoxOffice": "$268,163,011",
       "Production": "N/A",
       "Website": "N/A",
       "Response": "True",
       "soundcloud": "",
-      "id": 4
+      "id": 2
     }
   ]
 }
