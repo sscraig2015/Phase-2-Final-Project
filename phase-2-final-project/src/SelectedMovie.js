@@ -12,7 +12,7 @@ function SelectedMovie({movie}){
 
     const selectedMovie = movie.find((movie) => movie.Title === params.movieTitle)
    
-    const [movieInfo, setMovieInfo] = useState(true)
+    const [movieInfo, setMovieInfo] = useState(false)
     
     function showMovieInfo(){
         setMovieInfo(!movieInfo)

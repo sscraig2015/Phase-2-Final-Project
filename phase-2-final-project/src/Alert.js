@@ -1,20 +1,21 @@
 
 
 function Alert({answer, setAlertStatus}){
+    console.log(answer)
     
-    setTimeout(() => setAlertStatus(null), 1000)
-        
-    if (answer){
-        console.log('search true')
-       
+    setTimeout(() => setAlertStatus(null), 2500)
     
-        return <h2>success</h2>
-        
-    } else {
-        console.log('search false')
-        return <h2>already entered</h2>
-    }
-    //setTimeout to setAlertStatus to false after 3 seconds.
+    let selection = [
+        "Great Choice!",
+        "You already submitted that one!",
+        "Can't find that one. Sorry!"
+    ]
+    
+    return (
+        <div className="alertWindow">
+            <h2>{selection[answer]}</h2> 
+       </div>
+    )
 }
 
 export default Alert

@@ -9,15 +9,42 @@ import NewMovieForm from './NewMovieForm';
 
 function App() {
  
-
+  const [update, setUpdate] = useState(false)
   const [movies, setMovies] = useState([])
   const match = useRouteMatch()
+
+
+  useEffect(() => {
+    fetch("http://localhost:3000/movies")
+        .then((resp) => resp.json())
+        .then((data) => setMovies(data))      
+  }, [update])
 
   useEffect(() => {
     fetch("http://localhost:3000/movies")
         .then((resp) => resp.json())
         .then((data) => setMovies(data))      
   }, [])
+
+
+  function deleteMovie(e){
+  
+  const movieIndex = e.target.name
+  
+  // let newArray = movies
+  // newArray.splice(movieIndex - 1, 1,)
+  // setMovies(newArray)
+  setUpdate(!update)   
+    
+  fetch(`http://localhost:3000/movies/${movieIndex}`, {
+    method:'DELETE',
+    body: JSON.stringify(null)
+    })
+
+    
+}
+
+
 
 function handleNewMovie(movieObj, soundcloud){
 
@@ -52,8 +79,8 @@ function handleNewMovie(movieObj, soundcloud){
           <SelectedMovie movie={movies} />
         </Route>
         <Route  path="/">
-          <Homepage movies={movies}/>
-        </Route>
+          <Homepage movies={movies} deleteMovie={deleteMovie}/>
+        </Route>/
       </Switch>
     </div>
     

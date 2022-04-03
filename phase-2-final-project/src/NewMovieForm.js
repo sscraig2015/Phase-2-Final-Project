@@ -5,7 +5,7 @@ import { useState } from "react"
 function NewMovieForm({movies, handleNewMovie}){
     
     const [alertStatus, setAlertStatus] = useState(false)
-    const [answer, setAnswer] = useState(null)
+    const [answer, setAnswer] = useState('')
       
     function findSearchedMovie(e){
         e.preventDefault()
@@ -16,30 +16,28 @@ function NewMovieForm({movies, handleNewMovie}){
         fetch(`http://www.omdbapi.com/?t=${movieTitle}&plot=full&apikey=b4d7d7b5`)
             .then((resp) => resp.json())
             .then((resp) => {
-            if (resp.Response === "False") {
-                console.log("movie not found")
-            } else {
-                console.log(resp)
-                validateSearchedMovie(resp, soundcloud)
-            }
+                if (resp.Response === "True") { 
+                    validateSearchedMovie(resp, soundcloud)
+                } else {
+                    
+                    setAnswer(2)
+                    setAlertStatus(true)
+                } 
             })
     }
         
-    function validateSearchedMovie(movieObj, soundcloud) {
-        
-        const doesntMatch = (film) => !(film.Title.toLowerCase() === movieObj.Title.toLowerCase())
+    function validateSearchedMovie(movieObj, soundcloud) { 
+    
+      const doesntMatch = (film) => !(film.Title.toLowerCase() === movieObj.Title.toLowerCase())
       
-        if (movies.every(doesntMatch)) {
-            handleNewMovie(movieObj, soundcloud)
-            setAnswer(true)
-            setAlertStatus(true)
-            console.log('new movie')
-              
-          } else {
-              console.log('already entered')
-              setAnswer(false)
-              setAlertStatus(true)
-          }
+      if (movies.every(doesntMatch)) {
+        handleNewMovie(movieObj, soundcloud)
+        setAnswer(0)
+        setAlertStatus(true)
+     } else {
+        setAnswer(1)
+        setAlertStatus(true)
+        }
     }
     
     return (
